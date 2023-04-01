@@ -1,12 +1,24 @@
-# vision notes
+# VisionNotes, Vision Notes for my reading or thinking.
 
-## Topic 1 â€”â€” Image Segment methods
+## Originalism
 
-### Content
-hardThresholding : use one fixed threshold to segment image as object pixels and background pixels, in particular, object pixels value as 1, background pixels value as 0;
-softThresholding : use a range to segment image to segment image as object pixels, background pixels and boundry pixels, in particular, object pixels value as 1, background pixels value as 0, and boundry pixels value stay in the range of 0 to 1, respect to the range of input lowThreshold and highThreshold;
-relativeHardThresholding :  
-hardDynamicThreshold
-relativeSoftThresholding
-pixelMapping
-ThresholdImage
+* clues/basic_clues.md£¬provided basic clues we Orginizing documents. You can find in issue #2.
+  
+* listClassic, provided the notes for classic books or libratures.
+* someone, provided the notes for someone's topic.
+* tools£¬provided the notes for tools.
+* hotSpot£¬provided the notes for hotSpot.
+* brainStorming, provided the notes from brain storming.
+
+---
+~ÖĞ
+# ÊÓ¾õ±Ê¼Ç, Ëù¶ÁÓëËùÏë.
+## ×éÖ¯½á¹¹
+
+* ÔÚclues/basic_blues.mdÖĞ£¬Ìá¹©ÁË±¾ÏîÄ¿×éÖ¯ÎÄµµµÄ»ù±¾ÏßË÷. issue¿É¶¨Î»ÖÁ #2.
+  
+* listClassicÄ¿Â¼£¬Ìá¹©ÁË¾­µäÊé¼®ÓëÎÄÏ×µÄ±Ê¼Ç.
+* someoneÄ¿Â¼£¬Ìá¹©ÁËÒÔÄ³ÈËÎªÖ÷ÌâµÄÏà¹Ø±Ê¼Ç.
+* tools, Ìá¹©¶ÔÒÔÄ³¹¤¾ßÎªÖ÷ÌâµÄÏà¹Ø±Ê¼Ç.
+* hotSpot, Ìá¹©¶ÔÄ³ÈÈµãÎªÖ÷ÌâµÄÏà¹Ø±Ê¼Ç.
+* brainStormingÄ¿Â¼£¬Ìá¹©Í·ÄÔ·ç±©ËùµÃ±Ê¼Ç.
