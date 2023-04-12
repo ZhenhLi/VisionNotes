@@ -2,23 +2,23 @@
 
 ## Originalism
 
-* clues/basic_clues.md£¬provided basic clues we Orginizing documents. You can find in issue #2.
+* clues/basic_clues.mdï¼Œprovided basic clues we Orginizing documents. You can find in issue #2.
   
 * listClassic, provided the notes for classic books or libratures.
 * someone, provided the notes for someone's topic.
-* tools£¬provided the notes for tools.
-* hotSpot£¬provided the notes for hotSpot.
+* toolsï¼Œprovided the notes for tools.
+* hotSpotï¼Œprovided the notes for hotSpot.
 * brainStorming, provided the notes from brain storming.
 
 ---
-~ÖĞ
-# ÊÓ¾õ±Ê¼Ç, Ëù¶ÁÓëËùÏë.
-## ×éÖ¯½á¹¹
+~ä¸­
+# è§†è§‰ç¬”è®°, æ‰€è¯»ä¸æ‰€æƒ³.
+## ç»„ç»‡ç»“æ„
 
-* ÔÚclues/basic_blues.mdÖĞ£¬Ìá¹©ÁË±¾ÏîÄ¿×éÖ¯ÎÄµµµÄ»ù±¾ÏßË÷. issue¿É¶¨Î»ÖÁ #2.
+* åœ¨clues/basic_blues.mdä¸­ï¼Œæä¾›äº†æœ¬é¡¹ç›®ç»„ç»‡æ–‡æ¡£çš„åŸºæœ¬çº¿ç´¢. issueå¯å®šä½è‡³ #2.
   
-* listClassicÄ¿Â¼£¬Ìá¹©ÁË¾­µäÊé¼®ÓëÎÄÏ×µÄ±Ê¼Ç.
-* someoneÄ¿Â¼£¬Ìá¹©ÁËÒÔÄ³ÈËÎªÖ÷ÌâµÄÏà¹Ø±Ê¼Ç.
-* tools, Ìá¹©¶ÔÒÔÄ³¹¤¾ßÎªÖ÷ÌâµÄÏà¹Ø±Ê¼Ç.
-* hotSpot, Ìá¹©¶ÔÄ³ÈÈµãÎªÖ÷ÌâµÄÏà¹Ø±Ê¼Ç.
-* brainStormingÄ¿Â¼£¬Ìá¹©Í·ÄÔ·ç±©ËùµÃ±Ê¼Ç.
+* listClassicç›®å½•ï¼Œæä¾›äº†ç»å…¸ä¹¦ç±ä¸æ–‡çŒ®çš„ç¬”è®°.
+* someoneç›®å½•ï¼Œæä¾›äº†ä»¥æŸäººä¸ºä¸»é¢˜çš„ç›¸å…³ç¬”è®°.
+* tools, æä¾›å¯¹ä»¥æŸå·¥å…·ä¸ºä¸»é¢˜çš„ç›¸å…³ç¬”è®°.
+* hotSpot, æä¾›å¯¹æŸçƒ­ç‚¹ä¸ºä¸»é¢˜çš„ç›¸å…³ç¬”è®°.
+* brainStormingç›®å½•ï¼Œæä¾›å¤´è„‘é£æš´æ‰€å¾—ç¬”è®°.

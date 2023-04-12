@@ -2,129 +2,129 @@
 
 ## list
 
-* features2dÎª2DÌØÕ÷¿ò¼Ü
-  * ÆäÄÚ·ÖÎª£º
-    * features2d_main ÌØÕ÷¼ì²âÓëÃèÊö
-    * features2d_match ÃèÊö×ÓÆ¥Åä
-    * features2d_draw »æÖÆ¹Ø¼üµãÓëÆ¥Åä¶Ô
-    * features2d_category Ä£°å¹éÀà
-    * features2d_hal Ó²¼ş¼ÓËÙµÈ.
-      * features2d_hal_interface½Ó¿Ú
+* features2dä¸º2Dç‰¹å¾æ¡†æ¶
+  * å…¶å†…åˆ†ä¸ºï¼š
+    * features2d_main ç‰¹å¾æ£€æµ‹ä¸æè¿°
+    * features2d_match æè¿°å­åŒ¹é…
+    * features2d_draw ç»˜åˆ¶å…³é”®ç‚¹ä¸åŒ¹é…å¯¹
+    * features2d_category æ¨¡æ¿å½’ç±»
+    * features2d_hal ç¡¬ä»¶åŠ é€Ÿç­‰.
+      * features2d_hal_interfaceæ¥å£
 
-* opencvÖĞµÄËã·¨¼Ì³Ğ²ã´Î
+* opencvä¸­çš„ç®—æ³•ç»§æ‰¿å±‚æ¬¡
   * class Algorithm
-  * class Features2D : public virtual Algorithm // 2Î¬Í¼ÏñÌØÕ÷ÌáÈ¡ºÍÃèÊöÌáÈ¡Æ÷³éÏó»ùÀà
-    * detect() ÊäÈëÍ¼Ïñ£¬¼ÆËã¹Ø¼üµã
-    * compute() ÊäÈëÍ¼Ïñ¡¢¹Ø¼üµã¼¯£¬È»ºó¼ÆËã¹Ø¼üµãµÄÃèÊö×Ó£¬¶ÔÓÚ²»´æÔÚÃèÊö×ÓµÄ¹Ø¼üµã£¬½«ÆäÒÆ³ı. ÓĞÊ±ÓĞµÄ¹Ø¼üµãÒ²»áĞÂÔö. Êä³öÃèÊö×Ó
-    * detectAndCompute() ÊäÈëÍ¼Ïñ£¬Êä³öÕÒµ½µÄ¹Ø¼üµãºÍ¼ÆËãµÄÃèÊö×Ó
-    * ÆäËûÊôĞÔ²Ù×÷
-  * typedef FeatureDetector Features2D ÌØÕ÷¼ì²âÆ÷
-  * typedef DescirptorExractor Features2D ¹Ø¼üµãÃèÊö×ÓÌáÈ¡Æ÷
+  * class Features2D : public virtual Algorithm // 2ç»´å›¾åƒç‰¹å¾æå–å’Œæè¿°æå–å™¨æŠ½è±¡åŸºç±»
+    * detect() è¾“å…¥å›¾åƒï¼Œè®¡ç®—å…³é”®ç‚¹
+    * compute() è¾“å…¥å›¾åƒã€å…³é”®ç‚¹é›†ï¼Œç„¶åè®¡ç®—å…³é”®ç‚¹çš„æè¿°å­ï¼Œå¯¹äºä¸å­˜åœ¨æè¿°å­çš„å…³é”®ç‚¹ï¼Œå°†å…¶ç§»é™¤. æœ‰æ—¶æœ‰çš„å…³é”®ç‚¹ä¹Ÿä¼šæ–°å¢. è¾“å‡ºæè¿°å­
+    * detectAndCompute() è¾“å…¥å›¾åƒï¼Œè¾“å‡ºæ‰¾åˆ°çš„å…³é”®ç‚¹å’Œè®¡ç®—çš„æè¿°å­
+    * å…¶ä»–å±æ€§æ“ä½œ
+  * typedef FeatureDetector Features2D ç‰¹å¾æ£€æµ‹å™¨
+  * typedef DescirptorExractor Features2D å…³é”®ç‚¹æè¿°å­æå–å™¨
 
-  * class AffineFeature : public Feature2D ·ÂÉä²»±ä¼ì²âÆ÷ÓëÌáÈ¡Æ÷ @YM11
-    * create() ÊäÈëÄãÒªÊ¹ÓÃµÄ¼ì²âÆ÷/ÌáÈ¡Æ÷ backend
+  * class AffineFeature : public Feature2D ä»¿å°„ä¸å˜æ£€æµ‹å™¨ä¸æå–å™¨ @YM11
+    * create() è¾“å…¥ä½ è¦ä½¿ç”¨çš„æ£€æµ‹å™¨/æå–å™¨ backend
   * typedef AffineFeature AffineFeatureDetector
   * typedef AffineFeature AffineDescriptorExtractor
 
-  * class SIFT : public Feature2D ³ß¶È²»±äÌØÕ÷±ä»»Ëã·¨@Lowe04
-    * create() ÊäÈëÒªÌáÈ¡µÄÌØÕ÷Êı¡¢Octave²ãÊı¡¢¶Ô±È¶ÈãĞÖµ¡¢±ßÔµãĞÖµ¡¢sigma
+  * class SIFT : public Feature2D å°ºåº¦ä¸å˜ç‰¹å¾å˜æ¢ç®—æ³•@Lowe04
+    * create() è¾“å…¥è¦æå–çš„ç‰¹å¾æ•°ã€Octaveå±‚æ•°ã€å¯¹æ¯”åº¦é˜ˆå€¼ã€è¾¹ç¼˜é˜ˆå€¼ã€sigma
   * typedef SIFT SiftFeatureDetector
   * typedef SIFT SiftDescriptorExtractor
 
-  * class BRISK : public Feature2D BRISK¹Ø¼üµã¼ì²âÆ÷ºÍÃèÊö×ÓÌáÈ¡Æ÷@LSC11
-    * create() AGAST¼ì²âãĞÖµ·ÖÊı¡¢¼ì²âÆ÷Octaves¡¢Ê¹ÓÃ¸Ã³ß¶ÈÖÁÄ£Ê½ÒÔ²ÉÑù¹Ø¼üµãÁÚÓò
-    * create() ²»Í¬³ß¶È°ë¾¶ÁĞ±í¡¢²ÉÑùÔ²ÄÚ²ÉÑùµã¸öÊı¡¢¶Ì¶Ô×÷ÃèÊöÆ÷ĞÎ³É¡¢³¤¶ÔãĞÖµ×÷·½ÏòÅĞ¶Ï
-    * create() AGAST¼ì²â·ÖÊıãĞÖµ¡¢¼ì²âÆ÷Octaves¡¢°ë¾¶Çåµ¥¡¢²ÉÑùÊıÇåµ¥¡¢¶Ì¶ÔÓÃÓÚÃèÊöÆ÷ĞÎ³É¡¢³¤¶ÔÓÃÓÚ·½ÏòÅĞ¶Ï
+  * class BRISK : public Feature2D BRISKå…³é”®ç‚¹æ£€æµ‹å™¨å’Œæè¿°å­æå–å™¨@LSC11
+    * create() AGASTæ£€æµ‹é˜ˆå€¼åˆ†æ•°ã€æ£€æµ‹å™¨Octavesã€ä½¿ç”¨è¯¥å°ºåº¦è‡³æ¨¡å¼ä»¥é‡‡æ ·å…³é”®ç‚¹é‚»åŸŸ
+    * create() ä¸åŒå°ºåº¦åŠå¾„åˆ—è¡¨ã€é‡‡æ ·åœ†å†…é‡‡æ ·ç‚¹ä¸ªæ•°ã€çŸ­å¯¹ä½œæè¿°å™¨å½¢æˆã€é•¿å¯¹é˜ˆå€¼ä½œæ–¹å‘åˆ¤æ–­
+    * create() AGASTæ£€æµ‹åˆ†æ•°é˜ˆå€¼ã€æ£€æµ‹å™¨Octavesã€åŠå¾„æ¸…å•ã€é‡‡æ ·æ•°æ¸…å•ã€çŸ­å¯¹ç”¨äºæè¿°å™¨å½¢æˆã€é•¿å¯¹ç”¨äºæ–¹å‘åˆ¤æ–­
 
-  * class ORB : public Feature2D ·½ÏòBRIEFÌØÕ÷µã¼ì²âÆ÷ºÍÃèÊö·ûÌáÈ¡Æ÷ @RRKB11 ÏÈÔÚ½ğ×ÖËşÖĞÓÃFAST¼ì²âÎÈ¶¨¹Ø¼üµã£¬ÀûÓÃFAST»òHarrisÏìÓ¦¼ÆËã×îÇ¿ÌØÕ÷£¬ÕÒµ½Æä·½Ïò×÷Ò»½×¾Ø²¢ÓÃBRIEF¼ÆËãÃèÊö·û
-    * create() ×î´óÌØÕ÷¸öÊı500¡¢³ß¶ÈÒò×Ó1.2¡¢½ğ×ÖËş²ã¼¶8¡¢±ßÔµãĞÖµ31¡¢½ğ×ÖËşËùÔÚ²ã0¡¢²úÉúÃ¿Ò»¸ö³¯ÏòBRIEFÃèÊöÆ÷µÄµãÊı-2/3/4¡¢·ÖÊıÀàĞÍ-ÇĞ»»harris»òfast¡¢ÓÃÓÚ³¯ÏòBRIEFÃèÊö×ÓµÄ¿é´óĞ¡¡¢¿ìËÙãĞÖµ
+  * class ORB : public Feature2D æ–¹å‘BRIEFç‰¹å¾ç‚¹æ£€æµ‹å™¨å’Œæè¿°ç¬¦æå–å™¨ @RRKB11 å…ˆåœ¨é‡‘å­—å¡”ä¸­ç”¨FASTæ£€æµ‹ç¨³å®šå…³é”®ç‚¹ï¼Œåˆ©ç”¨FASTæˆ–Harriså“åº”è®¡ç®—æœ€å¼ºç‰¹å¾ï¼Œæ‰¾åˆ°å…¶æ–¹å‘ä½œä¸€é˜¶çŸ©å¹¶ç”¨BRIEFè®¡ç®—æè¿°ç¬¦
+    * create() æœ€å¤§ç‰¹å¾ä¸ªæ•°500ã€å°ºåº¦å› å­1.2ã€é‡‘å­—å¡”å±‚çº§8ã€è¾¹ç¼˜é˜ˆå€¼31ã€é‡‘å­—å¡”æ‰€åœ¨å±‚0ã€äº§ç”Ÿæ¯ä¸€ä¸ªæœå‘BRIEFæè¿°å™¨çš„ç‚¹æ•°-2/3/4ã€åˆ†æ•°ç±»å‹-åˆ‡æ¢harrisæˆ–fastã€ç”¨äºæœå‘BRIEFæè¿°å­çš„å—å¤§å°ã€å¿«é€Ÿé˜ˆå€¼
 
-  * class MSER : public Feature2D ×î´óÎÈ¶¨¼«ÖµÇøÓòÌáÈ¡Æ÷ @nister2008linear, @forssen2007maimally ±¾Ëã×ÓÓĞpythonÊ¾Àı.
-    * create() delta¡¢Ãæ»ıµÍãĞÖµ¡¢Ãæ»ı¸ßãĞÖµ¡¢²Ã¼ôÓëÆä×ÓÇøÓòÓĞÏàËÆ´óĞ¡µÄÇøÓò¡¢²ÊÍ¼ÖĞ×·×Ù¼õÈ¥ÓĞ±È´ËÖµĞ¡µÄmser?¡¢½ø»¯²½Êı¡¢Ãæ»ıãĞÖµ´¥·¢ÖØĞÂ³õÊ¼»¯¡¢ºöÂÔÌ«Ğ¡±ßÔµ¡¢±ßÔµÄ£ºı·ìÏ¶´óĞ¡
-    * detectRegions() ÊäÈë>= 3*3µÄ8ucxÍ¼¡¢²úÉúÒ»¶Ñµã¼¯¡¢²úÉúboundingbox
+  * class MSER : public Feature2D æœ€å¤§ç¨³å®šæå€¼åŒºåŸŸæå–å™¨ @nister2008linear, @forssen2007maimally æœ¬ç®—å­æœ‰pythonç¤ºä¾‹.
+    * create() deltaã€é¢ç§¯ä½é˜ˆå€¼ã€é¢ç§¯é«˜é˜ˆå€¼ã€è£å‰ªä¸å…¶å­åŒºåŸŸæœ‰ç›¸ä¼¼å¤§å°çš„åŒºåŸŸã€å½©å›¾ä¸­è¿½è¸ªå‡å»æœ‰æ¯”æ­¤å€¼å°çš„mser?ã€è¿›åŒ–æ­¥æ•°ã€é¢ç§¯é˜ˆå€¼è§¦å‘é‡æ–°åˆå§‹åŒ–ã€å¿½ç•¥å¤ªå°è¾¹ç¼˜ã€è¾¹ç¼˜æ¨¡ç³Šç¼éš™å¤§å°
+    * detectRegions() è¾“å…¥>= 3*3çš„8ucxå›¾ã€äº§ç”Ÿä¸€å †ç‚¹é›†ã€äº§ç”Ÿboundingbox
 
-  * class FastFeatureDetector : public Feature2D °ü×°Ê¹ÓÃFAST·½·¨µÄÌØÕ÷ÌáÈ¡
-    * create() ãĞÖµ10¡¢ÊÇ·ñ·Ç¼«´óÖµÒÖÖÆ¡¢¼ì²âÆ÷ÀàĞÍ
+  * class FastFeatureDetector : public Feature2D åŒ…è£…ä½¿ç”¨FASTæ–¹æ³•çš„ç‰¹å¾æå–
+    * create() é˜ˆå€¼10ã€æ˜¯å¦éæå¤§å€¼æŠ‘åˆ¶ã€æ£€æµ‹å™¨ç±»å‹
   * void FAST(image, keypoints, threshold, nonmaxSuppression);
-  * void FAST(image, keypoints, threshold, nonmaxSuppression, ¼ì²âÆ÷ÀàĞÍ);
+  * void FAST(image, keypoints, threshold, nonmaxSuppression, æ£€æµ‹å™¨ç±»å‹);
 
-  * class AgastFeatureDetector : public Feature2D ·â×°AGAST·½·¨ÌØÕ÷¼ì²â
-    * create() ãĞÖµ=10¡¢ÊÇ·ñ·Ç¼«´óÖµÒÖÖÆ¡¢¼ì²âÆ÷ÀàĞÍ
+  * class AgastFeatureDetector : public Feature2D å°è£…AGASTæ–¹æ³•ç‰¹å¾æ£€æµ‹
+    * create() é˜ˆå€¼=10ã€æ˜¯å¦éæå¤§å€¼æŠ‘åˆ¶ã€æ£€æµ‹å™¨ç±»å‹
   * void AGAST(image, keypoints, threshold, nonmaxSuppression);
-  * void AGAST(image, keypoints, threshold, nonmaxSuppression, ¼ì²âÆ÷ÀàĞÍ)
+  * void AGAST(image, keypoints, threshold, nonmaxSuppression, æ£€æµ‹å™¨ç±»å‹)
 
-  * class GFTTDetector : public Feature2D °ü×°Ê¹ÓÃgoodFeaturesToTrackº¯ÊıµÄÌØÕ÷¼ì²â
-    * create() ×î´ó½Çµã¡¢ÖÊÁ¿µÈ¼¶¡¢×î´ó·ÖÊı¡¢blockSize¡¢ÊÇ·ñÊ¹ÓÃharris¼ì²âÆ÷¡¢k
-    * create() Í¬ÉÏ-4£¬Ìİ¶Èsize¡¢ÊÇ·ñÊ¹ÓÃharris¼ì²âÆ÷¡¢k
+  * class GFTTDetector : public Feature2D åŒ…è£…ä½¿ç”¨goodFeaturesToTrackå‡½æ•°çš„ç‰¹å¾æ£€æµ‹
+    * create() æœ€å¤§è§’ç‚¹ã€è´¨é‡ç­‰çº§ã€æœ€å¤§åˆ†æ•°ã€blockSizeã€æ˜¯å¦ä½¿ç”¨harrisæ£€æµ‹å™¨ã€k
+    * create() åŒä¸Š-4ï¼Œæ¢¯åº¦sizeã€æ˜¯å¦ä½¿ç”¨harrisæ£€æµ‹å™¨ã€k
 
-  * class SimpleBlobDetector : public Feature2D ´ÓÍ¼ÖĞÌáÈ¡blob
-    * create() ²ÎÊı
+  * class SimpleBlobDetector : public Feature2D ä»å›¾ä¸­æå–blob
+    * create() å‚æ•°
 
-  * class KAZE : public Feature2D KAZE¹Ø¼üµã¼ì²âÆ÷ºÍÃèÊö×ÓÌáÈ¡Æ÷ @ABD12
-    * create() Ê¹ÄÜÌáÈ¡À©Õ¹128×Ö½ÚÃèÊö·û¡¢Ê¹ÄÜÓÒÉÏÃèÊö·û-·ÇĞı×ª²»±ä¡¢½ÓÊÜµãµÄ¼ì²âÆ÷ÏìÓ¦ãĞÖµ¡¢×î´óoctaveÑİ±ä¡¢Ã¿¸ö³ß¶È²ã¼¶µÄÄ¬ÈÏ×Ó¼¯Êı-ËÄ²æÊ÷Âğ¡¢À©É¢ÂÊ
+  * class KAZE : public Feature2D KAZEå…³é”®ç‚¹æ£€æµ‹å™¨å’Œæè¿°å­æå–å™¨ @ABD12
+    * create() ä½¿èƒ½æå–æ‰©å±•128å­—èŠ‚æè¿°ç¬¦ã€ä½¿èƒ½å³ä¸Šæè¿°ç¬¦-éæ—‹è½¬ä¸å˜ã€æ¥å—ç‚¹çš„æ£€æµ‹å™¨å“åº”é˜ˆå€¼ã€æœ€å¤§octaveæ¼”å˜ã€æ¯ä¸ªå°ºåº¦å±‚çº§çš„é»˜è®¤å­é›†æ•°-å››å‰æ ‘å—ã€æ‰©æ•£ç‡
 
-  * class AKAZE : public Feature2D AKAZE¹Ø¼üµã¼ì²âÆ÷ºÍÃèÊö·ûÌáÈ¡Æ÷@ANB13
-    * create() ÌáÈ¡Æ÷ÀàĞÍ-4ÖÖ¡¢ÃèÊö·ûsize¡¢ÃèÊö·ûÍ¨µÀÊı¡¢¼ì²âÆ÷½ÓÊÜÏìÓ¦ãĞÖµ¡¢×î´ó4²æÊ÷Éî¶È¡¢Ã¿³ß¶È²ãµÄÄ¬ÈÏ×Ó²ã¼¶Êı¡¢À©É¢ÂÊ
+  * class AKAZE : public Feature2D AKAZEå…³é”®ç‚¹æ£€æµ‹å™¨å’Œæè¿°ç¬¦æå–å™¨@ANB13
+    * create() æå–å™¨ç±»å‹-4ç§ã€æè¿°ç¬¦sizeã€æè¿°ç¬¦é€šé“æ•°ã€æ£€æµ‹å™¨æ¥å—å“åº”é˜ˆå€¼ã€æœ€å¤§4å‰æ ‘æ·±åº¦ã€æ¯å°ºåº¦å±‚çš„é»˜è®¤å­å±‚çº§æ•°ã€æ‰©æ•£ç‡
 
-* ¾àÀëÏà¹Ø
+* è·ç¦»ç›¸å…³
   * template<class T> struct SL2
   * template<class T> struct L2
   * template<class T> struct L1
 
-* ÃèÊö·ûÆ¥ÅäÆ÷
-  * class DescriptorMatcher : public Algorithm Æ¥Åä¹Ø¼üµãÃèÊö×ÓµÄ»ùÀà
-    * train() ÑµÁ·ÃèÊö·ûÆ¥ÅäÆ÷£¬Èçflann. bfÎŞ
-    * match() qDescriptors¡¢tDescriptors-ÒÑÔÚÀà¶ÔÏóÖĞ´æ´¢¡¢matches-DMatch¼¯-¿ÉÄÜ±ÈqĞ¡¡¢maskÑÚÄ¤-ÔÊĞíÄÄĞ©ÊäÈëqºÍt¾ØÕóµÄÃèÊö·ûÆ¥Åä
-    * knnMatch() qDes¡¢tDes¡¢matches-Ã¿¸ömatches[i]Îªk»ò¸üÉÙµÄÏàÍ¬µÄqDes¡¢k-Ã¿¸öqDesµÄ×î¼ÑÆ¥Åä¸öÊı-»ò±ÈkÉÙ¡¢compactResult-maskÓĞÓÃÊ±¿ÉÓÃ-ÔÊĞíÑ¹ËõmaskÖĞÅÅ³ıµÄĞĞ
-    * radiusMatch() qDes¡¢tDes¡¢matches¡¢compactResult¡¢maxDistance-Æ¥ÅäÃèÊö×Ó¼ä¾àÀë-ÈçHamming¾àÀë¶ø·Ç×ø±ê¾àÀë¡¢mask
-    * match() qDes¡¢matches¡¢masks ÎŞtDesµÄ½Ó¿Ú knnMatch()\radiusMatch()Í¬Àí.
-  * class BFMather : public DescriptorMatcher ±©Á¦ÃèÊö×ÓÆ¥Åä
-    * create() ·¶ÊıÀàĞÍ¡¢½»²æ¼ì²â-fasleÎªÄ¬ÈÏ×î½üÁÚĞĞÎªÖ®ÕÒÃ¿¸öqDesµÄ×î½üÁÚ-trueÎªk=1Ê±·µ»Øpairs(i,j)=¶ÔÓÚiqDecÆäjÆ¥Åä¼¯Îª×î½üÁÚ\·´Ö®ÒàÈ»-Ö»·µ»ØÒ»ÖÂµÄÆ¥Åä¶Ô. ¿ÉÑ¡ratio²âÊÔ-¼ûÓësiftÂÛÎÄ
-  * class FlannBasedMatcher : public DescriptorMatcher flann¼ÓËÙµÄ½üËÆ×î½üÁÚÆ¥Åä
-    * create() ÎŞº¯Êı
+* æè¿°ç¬¦åŒ¹é…å™¨
+  * class DescriptorMatcher : public Algorithm åŒ¹é…å…³é”®ç‚¹æè¿°å­çš„åŸºç±»
+    * train() è®­ç»ƒæè¿°ç¬¦åŒ¹é…å™¨ï¼Œå¦‚flann. bfæ— 
+    * match() qDescriptorsã€tDescriptors-å·²åœ¨ç±»å¯¹è±¡ä¸­å­˜å‚¨ã€matches-DMatché›†-å¯èƒ½æ¯”qå°ã€maskæ©è†œ-å…è®¸å“ªäº›è¾“å…¥qå’ŒtçŸ©é˜µçš„æè¿°ç¬¦åŒ¹é…
+    * knnMatch() qDesã€tDesã€matches-æ¯ä¸ªmatches[i]ä¸ºkæˆ–æ›´å°‘çš„ç›¸åŒçš„qDesã€k-æ¯ä¸ªqDesçš„æœ€ä½³åŒ¹é…ä¸ªæ•°-æˆ–æ¯”kå°‘ã€compactResult-maskæœ‰ç”¨æ—¶å¯ç”¨-å…è®¸å‹ç¼©maskä¸­æ’é™¤çš„è¡Œ
+    * radiusMatch() qDesã€tDesã€matchesã€compactResultã€maxDistance-åŒ¹é…æè¿°å­é—´è·ç¦»-å¦‚Hammingè·ç¦»è€Œéåæ ‡è·ç¦»ã€mask
+    * match() qDesã€matchesã€masks æ— tDesçš„æ¥å£ knnMatch()\radiusMatch()åŒç†.
+  * class BFMather : public DescriptorMatcher æš´åŠ›æè¿°å­åŒ¹é…
+    * create() èŒƒæ•°ç±»å‹ã€äº¤å‰æ£€æµ‹-fasleä¸ºé»˜è®¤æœ€è¿‘é‚»è¡Œä¸ºä¹‹æ‰¾æ¯ä¸ªqDesçš„æœ€è¿‘é‚»-trueä¸ºk=1æ—¶è¿”å›pairs(i,j)=å¯¹äºiqDecå…¶jåŒ¹é…é›†ä¸ºæœ€è¿‘é‚»\åä¹‹äº¦ç„¶-åªè¿”å›ä¸€è‡´çš„åŒ¹é…å¯¹. å¯é€‰ratioæµ‹è¯•-è§ä¸siftè®ºæ–‡
+  * class FlannBasedMatcher : public DescriptorMatcher flannåŠ é€Ÿçš„è¿‘ä¼¼æœ€è¿‘é‚»åŒ¹é…
+    * create() æ— å‡½æ•°
 
-* »æÖÆº¯Êı
-  * enum struct DrawMatchesFlags »æÖÆÀàĞÍ
+* ç»˜åˆ¶å‡½æ•°
+  * enum struct DrawMatchesFlags ç»˜åˆ¶ç±»å‹
   * void drawKeypoints(image, keppooints, outImage, color, flags);
   * drawMatches(img1, kpts1, img2, kpts2, matches1to2, outImg, color, singlePointColor, matchesMask, flags)
-  * drawMatches() ¼ÓÈëÏ¸¶È
+  * drawMatches() åŠ å…¥ç»†åº¦
 
-* ÆÀ¹À
-  * void evaluateFeatureDetector(img1, img2, H1to2, kpt1, kpt2, repeatability, correspCount, Ä³ÌØÕ÷¼ì²âÆ÷Ö¸Õë);
+* è¯„ä¼°
+  * void evaluateFeatureDetector(img1, img2, H1to2, kpt1, kpt2, repeatability, correspCount, æŸç‰¹å¾æ£€æµ‹å™¨æŒ‡é’ˆ);
   * void computeRecallPrecisionCurve(matches1to2, correctMatches1to2Mask, recallPrecisionCurve);
   * float getRecall(recallPrecisionCurve, 1_precision);
   * int getNearestPoint(recallPresisionCurve, float 1_precision);
 
-* ÊÓ¾õ´Ê´ü Bag of visual words
+* è§†è§‰è¯è¢‹ Bag of visual words
   * class BOWTrainer
     * add() ...
     * virtual Mat cluster() const = 0
     * virtual Mat cluster(const des) const = 0
   * class BOWKMeansTrainer : public BOWTrainer
-    * cluster()ÖØÔØ
-  * class BOWImgDescriptorExtractor ÀûÓÃÊÓ¾õ´Ê´ü¼ÆËãÍ¼ÏñÃèÊö·û
-    * compute() image, kpts, imgDes-Êä³öÍ¼ÏñÃèÊö·û£¬ÊôÓÚ´ØµÄ¹Ø¼üµã¼¯Ö¸Òı£¬ÃèÊö·û
-    * compute() È¥µôÁËÃèÊö·û
+    * cluster()é‡è½½
+  * class BOWImgDescriptorExtractor åˆ©ç”¨è§†è§‰è¯è¢‹è®¡ç®—å›¾åƒæè¿°ç¬¦
+    * compute() image, kpts, imgDes-è¾“å‡ºå›¾åƒæè¿°ç¬¦ï¼Œå±äºç°‡çš„å…³é”®ç‚¹é›†æŒ‡å¼•ï¼Œæè¿°ç¬¦
+    * compute() å»æ‰äº†æè¿°ç¬¦
 
-* À©Õ¹--opencv-contrib¿âÖĞµÄxfeaures2d
-  * class FREAK : public Feature2D ¿ìËÙRetina¹Ø¼üµã @AOV12
-    * create() Ê¹ÄÜ·½Ïò¹éÒ»»¯¡¢Ê¹ÄÜ³ß¶È¹éÒ»»¯¡¢³ß¶È»¯ÃèÊö·û¡¢ËÄ²æÊ÷ÊıÄ¿¡¢ÓÃ»§×Ô¶¨ÒåÑ¡Ôñ¶Ô
+* æ‰©å±•--opencv-contribåº“ä¸­çš„xfeaures2d
+  * class FREAK : public Feature2D å¿«é€ŸRetinaå…³é”®ç‚¹ @AOV12
+    * create() ä½¿èƒ½æ–¹å‘å½’ä¸€åŒ–ã€ä½¿èƒ½å°ºåº¦å½’ä¸€åŒ–ã€å°ºåº¦åŒ–æè¿°ç¬¦ã€å››å‰æ ‘æ•°ç›®ã€ç”¨æˆ·è‡ªå®šä¹‰é€‰æ‹©å¯¹
   * class StarDetector : public Feature2D
-    * create() ×î´ósize¡¢ÏìÓ¦ãĞÖµ¡¢ÏßÍ¶Ó°ãĞÖµ¡¢Ïß¶şÖµ»¯ãĞÖµ¡¢·Ç¼«´óÖµÒÖÖÆ´óĞ¡
-  * class BriefDescriptorExtractor : public Feature2D BRIEFÃèÊö×Ó @calon2010
-    * create() ×Ö½Ú32¡¢Ê¹ÄÜ·½Ïò
-  * class LUCID : public Feature2D ¾Ö²¿Ò»ÖÂ±È½ÏÃèÊö·û
-    * create() ÃèÊö×Ó¹¹½¨ºË¡¢Ä£ºıÍ¼ÏñÏÈÑéºËÒÔÓÃÓÚÃèÊö×Ó¹¹½¨
-  * class LATCH : public Feature2D ´ÓÊ÷¿éÂëÖĞÑ§Ï°µÄÅÅÁĞ @2015
-    * create() ×Ö½ÚÊı¡¢Ğı×ªÒ»ÖÂĞÔ¡¢°ëssd³ß´ç¡¢sigma
-  * class BEBLID : public Feature2D @Suarez2020BEBLID ÌáÉı¸ßĞ§¶şÖµ¾Ö²¿Í¼ÏñÃèÊö·û
-    * create() ³ß¶ÈÒò×Ó¡¢ÃèÊö×Óbits
-  * class TEBLID : public Feature2D @Suarez2021TEBLID »ùÓÚÈıÔª×éµÄ¸ßĞ§¶şÖµ¾Ö²¿Í¼ÏñÃèÊö·û
-    * create() ³ß¶ÈÒò×Ó¡¢ÃèÊö×Óbits
-  * class DAISY : public Feature2D @Tola10 DAISYÃèÊö×Ó
-    * create() ³õÊ¼³ß¶ÈÏÂµÄ°ë¾¶¡¢q°ë¾¶¡¢qtheta¡¢qhist¡¢·¶Êı¡¢H¾ØÕó¡¢²åÖµ¡¢ÓÃ»§¶¨Òå³¯Ïò
+    * create() æœ€å¤§sizeã€å“åº”é˜ˆå€¼ã€çº¿æŠ•å½±é˜ˆå€¼ã€çº¿äºŒå€¼åŒ–é˜ˆå€¼ã€éæå¤§å€¼æŠ‘åˆ¶å¤§å°
+  * class BriefDescriptorExtractor : public Feature2D BRIEFæè¿°å­ @calon2010
+    * create() å­—èŠ‚32ã€ä½¿èƒ½æ–¹å‘
+  * class LUCID : public Feature2D å±€éƒ¨ä¸€è‡´æ¯”è¾ƒæè¿°ç¬¦
+    * create() æè¿°å­æ„å»ºæ ¸ã€æ¨¡ç³Šå›¾åƒå…ˆéªŒæ ¸ä»¥ç”¨äºæè¿°å­æ„å»º
+  * class LATCH : public Feature2D ä»æ ‘å—ç ä¸­å­¦ä¹ çš„æ’åˆ— @2015
+    * create() å­—èŠ‚æ•°ã€æ—‹è½¬ä¸€è‡´æ€§ã€åŠssdå°ºå¯¸ã€sigma
+  * class BEBLID : public Feature2D @Suarez2020BEBLID æå‡é«˜æ•ˆäºŒå€¼å±€éƒ¨å›¾åƒæè¿°ç¬¦
+    * create() å°ºåº¦å› å­ã€æè¿°å­bits
+  * class TEBLID : public Feature2D @Suarez2021TEBLID åŸºäºä¸‰å…ƒç»„çš„é«˜æ•ˆäºŒå€¼å±€éƒ¨å›¾åƒæè¿°ç¬¦
+    * create() å°ºåº¦å› å­ã€æè¿°å­bits
+  * class DAISY : public Feature2D @Tola10 DAISYæè¿°å­
+    * create() åˆå§‹å°ºåº¦ä¸‹çš„åŠå¾„ã€qåŠå¾„ã€qthetaã€qhistã€èŒƒæ•°ã€HçŸ©é˜µã€æ’å€¼ã€ç”¨æˆ·å®šä¹‰æœå‘
     * compute() image, keypoints, des, 
-  * class MSDDetector : public Feature2D ×î´ó×ÔÒìĞÔ¹Ø¼üµã¼ì²âÆ÷@Tombari14
+  * class MSDDetector : public Feature2D æœ€å¤§è‡ªå¼‚æ€§å…³é”®ç‚¹æ£€æµ‹å™¨@Tombari14
     * create()
   * class VGG : public Feature2D
     * create()
@@ -153,12 +153,12 @@
     * create()
   * void FASTForPointSet()
 
-* Æ¥Åä
+* åŒ¹é…
   * void matchGMS()
   * void matchLOGOS()
   
 
 
-* ËùĞè±Ø±¸
-  * class KeyPointsFilter ¶ÔÓÚ¹Ø¼üµã½øĞĞ¹ıÂËµÄÀàÂË²¨Æ÷
+* æ‰€éœ€å¿…å¤‡
+  * class KeyPointsFilter å¯¹äºå…³é”®ç‚¹è¿›è¡Œè¿‡æ»¤çš„ç±»æ»¤æ³¢å™¨
   * 
